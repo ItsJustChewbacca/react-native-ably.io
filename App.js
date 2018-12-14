@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Chat from "./chat";
+import Chat from "./Chat";
 import { StyleSheet, View, Text, TextInput, Button, AsyncStorage } from "react-native";
  
 export default class App extends Component<{}> {
@@ -28,7 +28,7 @@ export default class App extends Component<{}> {
   };
   getRender = () => {
     if (this.state.user != null) {
-      return <Chat handler={this.handler} />;
+       return <Chat handler= { this.handler } />;
     } else {
       return (
         <View style={styles.container}>
